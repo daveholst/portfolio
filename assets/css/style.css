@@ -109,6 +109,7 @@ main {
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-around;
+  overflow: hidden;
   float: right;
   margin: 0px var(--nav-bar-width) 3vh 0px;
   padding: 10px;
