@@ -4,27 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>daveHolst.dev Portfolio</title>
   </head>
   <body>
     <aside>
       <div class="logo-container"><span id="logo-d">D</span><span id="logo-h">H</span></div>
-      <nav>
-        <ul>
-          <!-- <li><img class="sidebar-icon" src="./assets/side-bar-icons/home-solid.svg" alt="house icon" /></li>
-          <li><img class="sidebar-icon" src="./assets/side-bar-icons/user-solid.svg" alt="person icon" /></li>
-          <li><img class="sidebar-icon" src="./assets/side-bar-icons/file-alt-solid.svg" alt="document icon" /></li>
-          <li><img class="sidebar-icon" src="./assets/side-bar-icons/eye-solid.svg" alt="eye icon" /></li>
-          <li><img class="sidebar-icon" src="./assets/side-bar-icons/envelope-solid.svg" alt="mail icon" /></li>
-          </li> -->
-          <li><a href="#home">// home.</a></li>
-          <li><a href="#holder">// about.</a></li>
-          <li><a href="#holder">// résumé.</a></li>
-          <li><a href="#holder">// projects.</a></li>
-          <li><a href="#holder">// contact.</a></li>
-        </ul>
-      </nav>
       <div class="socials-container">
         <ul>
           <li><img class="sidebar-icon" src="./assets/side-bar-icons/twitter-square-brands.svg" alt="mail icon" /></li>
@@ -34,6 +24,15 @@
         </ul>
       </div>
     </aside>
+    <nav class="nav-links-container">
+      <h4 id="nav-heading">N<br />A<br />V</h4>
+
+      <a class="nav-links" id="home-link" href="#home">home.</a>
+      <a class="nav-links" id="about-link" href="#holder">about.</a>
+      <a class="nav-links" id="resume-link" href="#holder">résumé.</a>
+      <a class="nav-links" id="projects-link" href="#holder">projects.</a>
+      <a class="nav-links" id="contact-link" href="#holder">contact.</a>
+    </nav>
     <main>
       <section class="landing-page-container" ?>
         <div class="badge-container">
@@ -55,9 +54,9 @@
           <div class="badge">
             <img src="./assets/badge-icons/ubuntu-brands.svg" alt="ubuntu-icon" />
           </div>
-          <div class="badge">
+          <!-- <div class="badge">
             <img src="./assets/badge-icons/accessible-icon-brands.svg" alt="accessible-icon" />
-          </div>
+          </div> -->
           <div class="badge">
             <img src="./assets/badge-icons/node-brands.svg" alt="node-icon" />
           </div>
@@ -67,7 +66,10 @@
         </div>
         <div class="hero-text-container">
           <img src="./assets/images/headshot-sml.jpeg" alt="author headshot" />
-          <h1>Hi I'm Dave,<br />a full-stack <br />junior developer.</h1>
+          <h1>
+            I'm <strong>Dave Holst</strong>,<br />
+            a full-stack javascript junior developer.
+          </h1>
           <img id="down-arrow-icon" src="./assets/images/angle-double-down-solid.svg" alt="down arrow icon" />
         </div>
       </section>
