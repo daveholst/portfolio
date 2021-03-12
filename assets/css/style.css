@@ -257,4 +257,8 @@ aside ul {
     margin-right: auto;
     opacity: 10%;
   }
+  /* use active instead of hover for mobile support (no hover state with touch?) */
+  .nav-links-container:active .nav-links {
+    display: block;
+  }
 }
