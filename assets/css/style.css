@@ -237,21 +237,42 @@ aside ul {
 
   /* change section margins to maximise screen area usage */
   section {
+    margin: 0px;
     padding: 10px;
   }
   /* move nav links to top left  */
+  #nav-heading,
+  #home-link {
+    display: none;
+  }
+
   .nav-links-container {
-    position: fixed;
-    grid-template-columns: 30px 80px;
-    top: 120px;
-    font-size: 1.5rem;
+    display: flex;
+    /* justify-items: stretch;
+    align-content: stretch; */
+    position: static;
+    transform: translateY(0%);
+    padding: 0px;
+    width: 100vw;
+    flex-wrap: wrap;
+    line-height: 1;
+    font-size: 1.2rem;
+    background-color: var(--nav-bar-color);
   }
+
+  .nav-links {
+    display: block;
+    margin: auto;
+    padding: 5px;
+  }
+
   /* adjust width and padding to account for moving grid container */
-  #nav-heading {
+  /* #nav-heading {
     /* place-self: start center; */
-    /* width: calc(var(--nav-bar-width) - 7px); */
-    padding: 0px 7px;
-  }
+  /* width: calc(var(--nav-bar-width) - 7px); */
+  /* padding: 0px 7px;
+  } */
+  */
   /* move scroll suggester to center and closer to bottom of viewport  */
   #down-arrow-icon {
     position: absolute;
@@ -263,7 +284,11 @@ aside ul {
     opacity: 10%;
   }
   /* use active instead of hover for mobile support (no hover state with touch?) */
-  .nav-links-container:active .nav-links {
+  /* .nav-links-container:active .nav-links {
     display: block;
   }
+
+  #nav-heading:not(:active) .nav-links {
+    display: none;
+  } */
 }
