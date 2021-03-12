@@ -221,12 +221,15 @@ aside ul {
   /* move nav links to top left  */
   .nav-links-container {
     position: fixed;
+    grid-template-columns: 30px 80px;
     top: 120px;
+    font-size: 1.5rem;
   }
   /* adjust width and padding to account for moving grid container */
   #nav-heading {
-    width: calc(var(--nav-bar-width) - 7px);
-    padding: 0px;
+    /* place-self: start center; */
+    /* width: calc(var(--nav-bar-width) - 7px); */
+    padding: 0px 7px;
   }
   /* move scroll suggester to center and closer to bottom of viewport  */
   #down-arrow-icon {
