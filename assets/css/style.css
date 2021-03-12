@@ -234,6 +234,11 @@ aside ul {
   main {
     margin: 0;
   }
+
+  /* change section margins to maximise screen area usage */
+  section {
+    padding: 10px;
+  }
   /* move nav links to top left  */
   .nav-links-container {
     position: fixed;
