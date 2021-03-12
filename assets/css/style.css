@@ -1,11 +1,15 @@
 :root {
   /* page layout variables */
   --nav-bar-width: 40px;
-
+  /* color theme for easy changes */
   --stitching-color: rgb(226, 226, 226);
   --badge-container-color: rgba(43, 77, 49, 0.85);
   --nav-bar-color: rgb(219, 41, 85);
   --text-color: rgb(23, 3, 18);
+}
+/* add smooth scrolling to internal links. */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,10 +30,15 @@ aside {
   background-color: var(--nav-bar-color);
 }
 
-/* nav slid over container in grid */
+section {
+  padding: 10px;
+  margin-right: var(--nav-bar-width);
+}
+
+/* nav slide over container in grid */
 .nav-links-container {
   position: fixed;
-  top: 50vh;
+  top: 46vh;
   transform: translateY(-50%);
   display: grid;
   grid-template-columns: var(--nav-bar-width) 80px;
@@ -112,7 +121,7 @@ main {
   justify-content: space-around;
   overflow: hidden;
   float: right;
-  margin: 0px var(--nav-bar-width) 3vh 0px;
+  margin: 0px -10px 3vh 0px;
   padding: 10px;
   width: 26vw;
   height: 97vh;
@@ -189,10 +198,12 @@ aside ul {
 }
 
 .logo-container {
+  margin-top: 10px;
   text-align: center;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  line-height: 0.75;
 }
 
 #logo-d {
@@ -202,6 +213,11 @@ aside ul {
 
 #logo-h {
   font-size: 1rem;
+}
+
+#logo-dev {
+  font-size: 0.74rem;
+  font-weight: 700;
 }
 
 /* mobile settings */
