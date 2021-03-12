@@ -30,6 +30,11 @@ aside {
   background-color: var(--nav-bar-color);
 }
 
+aside ul {
+  padding: 5px;
+  margin: 0;
+  list-style-type: none;
+}
 section {
   padding: 10px;
   margin-right: var(--nav-bar-width);
@@ -50,10 +55,18 @@ h2 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1.5;
 }
+
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--nav-bar-width);
+}
+
 /* nav slide over container in grid */
 .nav-links-container {
   position: fixed;
@@ -120,13 +133,6 @@ p {
   grid-row: 5/6;
 }
 
-main {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  margin-left: var(--nav-bar-width);
-}
-
 .landing-page-container {
   position: static;
   height: 100vh;
@@ -145,8 +151,6 @@ main {
   width: 26vw;
   height: 97vh;
   background-color: var(--badge-container-color);
-  /* outline-offset: -5px;
-  outline: 3px dashed var(--stitching-color); */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -188,7 +192,6 @@ main {
 }
 
 #down-arrow-icon {
-  /* float: right; */
   position: absolute;
   bottom: 0px;
   right: 30%;
@@ -197,12 +200,6 @@ main {
   margin-right: 30px;
   margin-bottom: 1.5vh;
   opacity: 10%;
-}
-
-aside ul {
-  padding: 5px;
-  margin: 0;
-  list-style-type: none;
 }
 
 .logo-container {
@@ -226,6 +223,45 @@ aside ul {
 #logo-dev {
   font-size: 0.74rem;
   font-weight: 700;
+}
+
+.projects-container-grid {
+  display: grid;
+  height: 70vw;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+#project-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-image: url("../images/projects/project-1.jpg");
+  background-position: center;
+}
+
+#project-2 {
+  background-image: url("../images/projects/project-1.jpg");
+  background-position: center;
+}
+
+#project-3 {
+  background-image: url("../images/projects/project-1.jpg");
+  background-position: center;
+}
+
+#project-4 {
+  background-image: url("../images/projects/project-1.jpg");
+  background-position: center;
+}
+
+#project-5 {
+  background-image: url("../images/projects/project-1.jpg");
+  background-position: center;
+}
+
+#project-6 {
+  background-image: url("../images/projects/project-1.jpg");
+  background-position: center;
 }
 /* detect touch device (ipad settings) */
 @media (hover: none) {
@@ -256,7 +292,7 @@ aside ul {
     padding: 5px;
   }
 }
-/* mobile settings */
+/* mobile settings iphone and under.*/
 @media (max-width: 500px) {
   h1 {
     font-size: 2rem;
@@ -289,8 +325,6 @@ aside ul {
 
   .nav-links-container {
     display: flex;
-    /* justify-items: stretch;
-    align-content: stretch; */
     position: static;
     transform: translateY(0%);
     padding: 0px;
@@ -307,29 +341,20 @@ aside ul {
     padding: 5px;
   }
 
-  /* adjust width and padding to account for moving grid container */
-  /* #nav-heading {
-    /* place-self: start center; */
-  /* width: calc(var(--nav-bar-width) - 7px); */
-  /* padding: 0px 7px;
-  } */
-
-  /* move scroll suggester to center and closer to bottom of viewport  */
   #down-arrow-icon {
     position: static;
-    /* right: 2%;
-    bottom: -3%;
-    width: 10%; */
     margin-left: auto;
     margin-right: auto;
     opacity: 10%;
   }
-  /* use active instead of hover for mobile support (no hover state with touch?) */
-  /* .nav-links-container:active .nav-links {
+  /* change projects grid to column */
+  .projects-container-grid {
     display: block;
+    /* height: 70vw;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(9, minmax(0, 1fr)); */
   }
-
-  #nav-heading:not(:active) .nav-links {
-    display: none;
-  } */
+  .project-container {
+    height: 70vw;
+  }
 }
