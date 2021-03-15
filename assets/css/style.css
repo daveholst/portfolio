@@ -68,6 +68,11 @@ main {
   margin-left: var(--nav-bar-width);
 }
 
+a {
+  /* text-decoration: none; */
+  color: var(--text-color);
+}
+
 /* nav slide over container in grid */
 .nav-links-container {
   position: fixed;
@@ -176,6 +181,7 @@ main {
   max-height: 70%;
 }
 
+/* hero/business card viewport container */
 .hero-text-container {
   display: flex;
   flex-direction: column;
@@ -190,7 +196,7 @@ main {
   border-radius: 50%;
   border: 8px solid #fff;
 }
-
+/* down arrow to encourage user to scroll rest of page */
 #down-arrow-icon {
   position: absolute;
   bottom: 0px;
@@ -371,21 +377,33 @@ main {
     margin: auto;
     padding: 5px;
   }
+  #home a {
+    display: block;
+    text-align: center;
+    margin: auto;
+
+  }
 
   #down-arrow-icon {
+    width: 50vw;
     position: static;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
     opacity: 10%;
   }
   /* change projects grid to column */
   .projects-container-grid {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     /* height: 70vw;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: repeat(9, minmax(0, 1fr)); */
   }
   .project-container {
+    display: block;
     height: 70vw;
+    /* margin: 2px; */
   }
 }
