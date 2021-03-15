@@ -106,15 +106,12 @@ a {
 
 .nav-links-container:hover .nav-links {
   display: block;
-  /* transition: ease-in 0.5s; */
 }
 
 #nav-heading {
   grid-column: 1/2;
   grid-row: 1/6;
   place-self: center;
-  /* writing-mode: vertical-rl;
-  transform: rotate(180deg); */
   background-color: var(--nav-bar-color);
 }
 
@@ -208,6 +205,7 @@ a {
   opacity: 10%;
 }
 
+/* DH logo container in top of navbar container */
 .logo-container {
   margin-top: 10px;
   text-align: center;
@@ -231,16 +229,13 @@ a {
   font-weight: 700;
 }
 
+/* projects grid for display of work */
 .projects-container-grid {
   display: grid;
   height: 70vw;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
   margin: 0px -5px;
-}
-
-.project-container {
-  margin: 5px;
 }
 
 .project-container h3 {
@@ -258,7 +253,9 @@ a {
   letter-spacing: 2px;
 }
 
-.project-container a {
+.projects-container-grid a {
+  margin: 5px;
+  padding: 0px;
   text-decoration: none;
   color: var(--background-color);
 }
@@ -359,7 +356,7 @@ a {
   #home-link {
     display: none;
   }
-
+/* move navigation to a floating top bar */
   .nav-links-container {
     display: flex;
     position: static;
@@ -383,13 +380,11 @@ a {
     margin: auto;
 
   }
-
+/* get arrow to scale with width and center on hero page */
   #down-arrow-icon {
     width: 50vw;
     position: static;
     margin: 0;
-    /* margin-left: auto;
-    margin-right: auto; */
     opacity: 10%;
   }
   /* change projects grid to column */
