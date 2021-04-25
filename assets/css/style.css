@@ -236,6 +236,7 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
   margin: 0px -5px;
+  margin-right: ;
 }
 
 .project-card {
@@ -246,10 +247,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(43, 77, 49, 0.7);
+  background-color: rgba(43, 77, 49, 0.8);
   padding: 0 8px 0 8px;
   margin: 0;
-  height: 3rem;
+  height: 2rem;
 }
 
 .project-header a {
@@ -291,31 +292,31 @@ a {
 }
 
 #project-2 {
-  background-image: url("../images/projects/discord-bot.jpg");
+  background-image: url("../screenshots/screenshot-quiz.jpg");
   background-position: center;
   background-size: 100%;
 }
 
 #project-3 {
-  background-image: url("../images/projects/discord-bot.jpg");
+  background-image: url("../screenshots/screenshot-weather.jpg");
   background-position: center;
   background-size: 100%;
 }
 
 #project-4 {
-  background-image: url("../images/projects/discord-bot.jpg");
+  background-image: url("../screenshots/screenshot-scheduler.jpg");
   background-position: center;
   background-size: 100%;
 }
 
 #project-5 {
-  background-image: url("../images/projects/discord-bot.jpg");
+  background-image: url("../screenshots/screenshot-scheduler.jpg");
   background-position: center;
   background-size: 100%;
 }
 
 #project-6 {
-  background-image: url("../images/projects/discord-bot.jpg");
+  background-image: url("../screenshots/screenshot-scheduler.jpg");
   background-position: center;
   background-size: 100%;
 }
@@ -417,7 +418,7 @@ a {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: repeat(9, minmax(0, 1fr)); */
   }
-  .project-container {
+  .project-card {
     display: block;
     height: 70vw;
     /* margin: 2px; */
