@@ -10,102 +10,50 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <title>daveHolst.dev Portfolio</title>
   </head>
   <body>
-    <aside>
-      <div class="logo-container">
-        <span id="logo-d">D</span><span id="logo-h">H</span><br /><span id="logo-dev">.dev</span>
-      </div>
-      <div class="socials-container">
-        <ul>
-          <li>
-            <a href="https://twitter.com/daveyholst"
-              ><img class="sidebar-icon" src="./assets/side-bar-icons/twitter-square-brands.svg" alt="twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/daveholst/"
-              ><img class="sidebar-icon" src="./assets/side-bar-icons/linkedin-brands.svg" alt="linkedin icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://dev.to/"
-              ><img class="sidebar-icon" src="./assets/side-bar-icons/dev-brands.svg" alt="dev.to icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/daveholst/"
-              ><img class="sidebar-icon" src="./assets/side-bar-icons/github-square-brands.svg" alt="github icon"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <nav class="nav-links-container">
-      <h4 id="nav-heading"><br />N<br />A<br />V</h4>
-      <a class="nav-links" id="home-link" href="#home">home.</a>
-      <a class="nav-links" id="about-link" href="#about">about.</a>
-      <a class="nav-links" id="projects-link" href="#projects">projects.</a>
-      <a class="nav-links" id="resume-link" href="#resume">résumé.</a>
-      <a class="nav-links" id="contact-link" href="#contact">contact.</a>
-    </nav>
     <main>
       <section id="home" class="landing-page-container" ?>
-        <div class="badge-container">
-          <div class="badge">
-            <img src="./assets/badge-icons/git-brands.svg" alt="git-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/html5-brands.svg" alt="html5-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/css3-alt-brands.svg" alt="css3-alt-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/js-square-brands.svg" alt="js-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/apple-brands.svg" alt="apple-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/ubuntu-brands.svg" alt="ubuntu-icon" />
-          </div>
-          <!-- <div class="badge">
-            <img src="./assets/badge-icons/accessible-icon-brands.svg" alt="accessible-icon" />
-          </div> -->
-          <div class="badge">
-            <img src="./assets/badge-icons/node-brands.svg" alt="node-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/aws-brands.svg" alt="aws-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/bootstrap-brands.svg" alt="bootstrap-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/php-brands.svg" alt="php-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/raspberry-pi-brands.svg" alt="raspberry-pi-icon" />
-          </div>
-          <div class="badge">
-            <img src="./assets/badge-icons/react-brands.svg" alt="react-icon" />
-          </div>
+        <header id="social-icons">
+          <span>daveholst.dev</span>
+          <div id="icons-wrapper">
+          <a href="https://github.com/daveholst"><img src="./assets/icons/github.svg" alt="github-icon"></a>
+          <a href="https://www.linkedin.com/in/daveholst/"><img src="./assets/icons/linkedin.svg" alt="github-icon"></a>
+          <a href="https://twitter.com/daveyholst"><img src="./assets/icons/twitter.svg" alt="github-icon"></a>
+          <a href="https://dev.to/daveholst"><img src="./assets/icons/dev-dot-to.svg" alt="github-icon"></a>
         </div>
-        <div class="hero-text-container">
+        </header>
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>
+              Hi, I'm <strong>Dave Holst</strong>.<br><br>
+              A JavaScript developer with a range of skills in development, design, education and engineering.
+            </h1>
+            <div class="hero-buttons">
+              <a href="#projects"><button>work</button></a>
+              <a href="./assets/dave-holst-resume.pdf"><button>cv</button></a>
+            </div>
+
+          </div>
+
           <img src="./assets/images/headshot-sml.jpeg" alt="author headshot" />
-          <h1>
-            I'm <strong>Dave Holst</strong>,<br />
-            a full-stack javascript junior developer.
-          </h1>
-          <a href="#about"
-            ><img id="down-arrow-icon" src="./assets/images/angle-double-down-solid.svg" alt="down arrow icon"
-          /></a>
+
         </div>
+        <nav id="navbar">
+          <a href="#home"> ~/home </a>
+          <a href="#about"> ~/about</a>
+          <a href="#projects"> ~/projects</a>
+          <a href="#resume"> ~/cv</a>
+          <a href="#contact"> ~/contact</a>
+      </nav>
       </section>
-      <section>
+      <div class="page-content">
+      <section id="about-section">
         <h2 id="about">about.</h2>
         <p>
           I'm a 32 years old country kid with a passion for technology and the outdoors. I like to spend my time
@@ -131,69 +79,50 @@
         <h2 id="projects">projects.</h2>
         <div class="projects-container-grid">
           <div class="project-card" id="project-1" href="https://daveholst.github.io/homework-week1-accessibility/">
-            <div class="project-header">
-              <a href="https://moovie.pro">
-                <h3>moovie.pro</h3>
-              </a>
-              <a href="https://github.com/busy-boys/movie-master">
-                <h3>GitHub</h3>
-              </a>
+            <div class=project-link-buttons>
+              <h3>moovie.pro</h3>
+              <a href="https://busy-boys.github.io/movie-master/"><button>Live Site</button></a>
+              <a href="https://github.com/busy-boys/movie-master"><button>GitHub Repo</button></a>
             </div>
-
           </div>
 
           <div class="project-card" id="project-2" href="https://github.com/daveholst/discord-bot">
-            <div class="project-header">
-              <a href="https://daveholst.github.io/coding-quiz/">
-                <h3>JS Quiz</h3>
-              </a>
-              <a href="https://github.com/daveholst/coding-quiz">
-                <h3>GitHub</h3>
-              </a>
+            <div class=project-link-buttons>
+              <h3>JS Quiz</h3>
+              <a href="https://daveholst.github.io/coding-quiz/"><button>Live Site</button></a>
+              <a href="https://github.com/daveholst/coding-quiz"><button>GitHub Repo</button></a>
             </div>
           </div>
 
           <div class="project-card" id="project-3" href="">
-            <div class="project-header">
-              <a href="https://daveholst.github.io/weather-dashboard/">
-                <h3>Weather App</h3>
-              </a>
-              <a href="https://github.com/daveholst/weather-dashboard">
-                <h3>GitHub</h3>
-              </a>
+            <div class=project-link-buttons>
+              <h3>Weather App</h3>
+              <a href="https://github.com/daveholst/weather-dashboard"><button>Live Site</button></a>
+              <a href="https://daveholst.github.io/weather-dashboard/"><button>GitHub Repo</button></a>
             </div>
           </div>
 
           <div class="project-card" id="project-4" href="">
-            <div class="project-header">
-              <a href="https://daveholst.github.io/day-planner/">
-                <h3>Day Planner</h3>
-              </a>
-              <a href="https://github.com/daveholst/day-planner">
-                <h3>GitHub</h3>
-              </a>
+            <div class=project-link-buttons>
+              <h3>ReadMe Generator</h3>
+              <a href="https://github.com/daveholst/readme-generator"><button>Live Site</button></a>
+              <a href="https://github.com/daveholst/readme-generator"><button>GitHub Repo</button></a>
             </div>
           </div>
 
           <div class="project-card" id="project-5" href="">
-            <div class="project-header">
-              <a href="https://daveholst.github.io/day-planner/">
-                <h3>Day Planner</h3>
-              </a>
-              <a href="https://github.com/daveholst/day-planner">
-                <h3>GitHub</h3>
-              </a>
+            <div class=project-link-buttons>
+              <h3>Day Planner</h3>
+              <a href="https://daveholst.github.io/day-planner/"><button>Live Site</button></a>
+              <a href="https://github.com/daveholst/day-planner"><button>GitHub Repo</button></a>
             </div>
           </div>
 
           <div class="project-card" id="project-6" href="">
-            <div class="project-header">
-              <a href="https://daveholst.github.io/day-planner/">
-                <h3>Day Planner</h3>
-              </a>
-              <a href="https://github.com/daveholst/day-planner">
-                <h3>GitHub</h3>
-              </a>
+            <div class=project-link-buttons>
+              <h3>Day Planner</h3>
+              <a href="https://daveholst.github.io/day-planner/"><button>Live Site</button></a>
+              <a href="https://github.com/daveholst/day-planner"><button>GitHub Repo</button></a>
             </div>
           </div>
 
@@ -225,6 +154,8 @@
 
         <form action=""></form>
       </section>
+    </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
