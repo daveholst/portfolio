@@ -27,7 +27,7 @@ h1 {
   display: inline-block;
   width: 100%;
   font-family: "Shippori Mincho", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 h2 {
@@ -110,13 +110,14 @@ a {
   float: left;
   display: block;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-transform: lowercase;
   font-weight: 500;
   letter-spacing: 1px;
   color: #f2f2f2;
   text-align: center;
-  padding: 1vh;
+  margin: auto 1vw;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -194,7 +195,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(43, 77, 49, 0.8);
-  padding: 0 8px 0 8px;
+  padding: 0;
   margin: 0;
   height: 2rem;
   overflow: hidden;
