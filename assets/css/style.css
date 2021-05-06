@@ -87,7 +87,8 @@ a {
   background-color: var(--background-color); /* Green */
   border: none;
   color: var(--text-color);
-  padding: 10px 32px;
+  margin: 5px;
+  padding: 8px 32px;
   font-family: "Roboto Mono", monospace;
   text-align: center;
   text-decoration: none;
@@ -142,6 +143,7 @@ a {
   font-weight: 500;
   letter-spacing: 1px;
   color: #f2f2f2;
+  opacity: 0.9;
   text-align: center;
   padding: 1vh;
   text-decoration: none;
@@ -195,6 +197,7 @@ a {
   padding: 0 8px 0 8px;
   margin: 0;
   height: 2rem;
+  overflow: hidden;
 }
 
 .project-header a {
@@ -265,7 +268,7 @@ a {
   background-size: 100%;
 }
 /* detect touch device (ipad settings) */
-@media (hover: none) {
+/* @media (hover: none) {
   aside {
     display: none;
   }
@@ -292,7 +295,7 @@ a {
     margin: auto;
     padding: 5px;
   }
-}
+} */
 /* mobile settings iphone and under.*/
 @media (max-width: 500px) {
   h1 {
@@ -300,14 +303,6 @@ a {
     width: 80%;
   }
 
-  /* turn off badge banner container on mobile.  */
-  .badge-container {
-    display: none;
-  }
-  /* remove side bar */
-  aside {
-    display: none;
-  }
   /* remove margin offset for floating sidebar */
   main {
     margin: 0;
@@ -319,40 +314,41 @@ a {
     padding: 10px;
   }
   /* move nav links to top left  */
-  #nav-heading,
-  #home-link {
-    display: none;
-  }
-  /* move navigation to a floating top bar */
-  .nav-links-container {
-    display: flex;
-    position: static;
-    transform: translateY(0%);
-    padding: 0px;
-    width: 100vw;
-    flex-wrap: wrap;
-    line-height: 1;
-    font-size: 1.2rem;
-    background-color: var(--nav-bar-color);
-  }
 
-  .nav-links {
-    display: block;
-    margin: auto;
-    padding: 5px;
-  }
   #home a {
     display: block;
     text-align: center;
     margin: auto;
   }
-  /* get arrow to scale with width and center on hero page */
-  #down-arrow-icon {
-    width: 50vw;
-    position: static;
-    margin: 0;
-    opacity: 10%;
+
+  #icons-wrapper img {
+    display: none;
   }
+
+  #navbar {
+    display: none;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .hero-container img {
+    width: 150px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    margin: 10px auto;
+    width: 200px;
+  }
+  /* get arrow to scale with width and center on hero page */
+
   /* change projects grid to column */
   .projects-container-grid {
     display: flex;
