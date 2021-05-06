@@ -33,28 +33,16 @@ function myFunction() {
   }
 }
 
-// event listeners for 'modals' on projects
+let projectsArray = document.querySelectorAll('.project-link-buttons')
 
-let project1 = document.querySelector('#project-1 .project-link-buttons')
+projectsArray.forEach(project => {
+  // add active class to show 'modal
+  project.addEventListener('mouseenter', (e) => {
+    e.target.classList.add('project-link-active');
+  })
 
-project1.addEventListener('mouseenter',(e) => {
-  targetElement = e.target;
-  e.target.classList.add('project-link-active');
-})
-
-// clear out on mouse out
-project1.addEventListener('mouseleave',(e) => {
-  e.target.classList.remove('project-link-active');
-})
-
-let project2 = document.querySelector('#project-2 .project-link-buttons')
-
-project2.addEventListener('mouseenter',(e) => {
-  targetElement = e.target;
-  e.target.classList.add('project-link-active');
-})
-
-// clear out on mouse out
-project2.addEventListener('mouseleave',(e) => {
-  e.target.classList.remove('project-link-active');
-})
+  // clear out on mouse out
+  project.addEventListener('mouseleave',(e) => {
+    e.target.classList.remove('project-link-active');
+  })
+});
