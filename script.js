@@ -25,10 +25,10 @@ let about = document.querySelector('#about');
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-    document.querySelector('#about').style.marginTop = '70px';
+    document.querySelector('#about').style.marginTop = '7vh';
   } else {
     navbar.classList.remove("sticky");
-    document.querySelector('#about').style.marginTop = '20px';
+    document.querySelector('#about').style.marginTop = '2vh';
 
   }
 }
