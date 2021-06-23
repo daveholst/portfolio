@@ -247,19 +247,25 @@ a {
 #project-1 {
   grid-column: 1/3;
   grid-row: 1/3;
+  background-image: url("https://github.com/busy-boys/project-2/blob/main/assets/screenshots/coaching.gif?raw=true");
+  background-position: center;
+  background-repeat: space;
+  background-size: 100%;
+}
+#project-2 {
   background-image: url("https://github.com/busy-boys/movie-master/blob/main/assets/moovie-pro.gif?raw=true");
   background-position: center;
   background-repeat: space;
   background-size: 100%;
 }
 
-#project-2 {
+#project-3 {
   background-image: url("../screenshots/screenshot-quiz.jpg");
   background-position: center;
   background-size: 100%;
 }
 
-#project-3 {
+#project-4 {
   background-image: url("../screenshots/screenshot-weather.jpg");
   background-position: center;
   background-repeat: space;
@@ -267,16 +273,8 @@ a {
   background-size: 100%;
 }
 
-#project-4 {
-  background-image: url("../screenshots/screenshot-readme-gen.jpeg");
-  background-position: center;
-  background-repeat: space;
-
-  background-size: 100%;
-}
-
 #project-5 {
-  background-image: url("../screenshots/screenshot-scheduler.jpg");
+  background-image: url("../screenshots/screenshot-readme-gen.jpeg");
   background-position: center;
   background-repeat: space;
 
@@ -285,6 +283,14 @@ a {
 
 #project-6 {
   background-image: url("../screenshots/screenshot-scheduler.jpg");
+  background-position: center;
+  background-repeat: space;
+
+  background-size: 100%;
+}
+
+#project-7 {
+  background-image: url("https://github.com/daveholst/tech-blog/blob/main/assets/tech-blog.gif?raw=true");
   background-position: center;
   background-repeat: space;
 
