@@ -43,6 +43,13 @@ h3 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-top: 5px;
+  margin-bottom: 0px;
+}
+h4 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -56,6 +63,10 @@ p {
 a {
   /* text-decoration: none; */
   color: var(--text-color);
+}
+
+.no-top-p {
+  margin-top: 0.2rem;
 }
 
 /* static height landing page to take up all of viewport (business card look?) */
@@ -243,14 +254,20 @@ a {
   cursor: pointer;
 }
 
-#project-1 {
-  grid-column: 1/3;
-  grid-row: 1/3;
+#project-1-thumbnail {
+  grid-column: 1/2;
+  grid-row: 1/2;
   background-image: url("https://github.com/busy-boys/project-2/blob/main/assets/screenshots/coaching.gif?raw=true");
   background-position: center;
   background-repeat: space;
   background-size: 100%;
 }
+
+#project-1-info {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
 #project-2 {
   background-image: url("https://github.com/busy-boys/movie-master/blob/main/assets/moovie-pro.gif?raw=true");
   background-position: center;
