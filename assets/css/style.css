@@ -39,10 +39,9 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--background-color);
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
   margin-top: 5px;
   margin-bottom: 5px;
 }
