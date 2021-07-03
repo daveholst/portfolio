@@ -215,7 +215,7 @@ a.anchor {
   display: grid;
   /* height: 70vw; */
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
   margin: 0px -5px;
 }
 
@@ -275,49 +275,70 @@ a.anchor {
   grid-row: 1/2;
 }
 
-#project-2 {
+#project-2-thumbnail {
+  grid-column: 1/2;
+  grid-row: 2/3;
   background-image: url("https://github.com/busy-boys/movie-master/blob/main/assets/moovie-pro.gif?raw=true");
   background-position: center;
   background-repeat: space;
   background-size: 100%;
 }
 
-#project-3 {
-  background-image: url("../screenshots/screenshot-quiz.jpg");
+#project-2-info {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+#project-3-thumbnail {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-image: url("https://github.com/daveholst/tech-blog/blob/main/assets/tech-blog.gif?raw=true");
   background-position: center;
+  background-repeat: space;
   background-size: 100%;
 }
 
-#project-4 {
+#project-3-info {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+#project-4-thumbnail {
+  grid-column: 1/2;
+  grid-row: 4/5;
   background-image: url("../screenshots/screenshot-weather.jpg");
   background-position: center;
   background-repeat: space;
 
   background-size: 100%;
 }
-
-#project-5 {
+#project-4-info {
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+#project-5-thumbnail {
+  grid-column: 1/2;
+  grid-row: 5/6;
   background-image: url("../screenshots/screenshot-readme-gen.jpeg");
   background-position: center;
   background-repeat: space;
 
   background-size: 100%;
 }
+#project-5-info {
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
 
-#project-6 {
-  background-image: url("../screenshots/screenshot-scheduler.jpg");
+#project-6-thumbnail {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  background-image: url("../screenshots/screenshot-quiz.jpg");
   background-position: center;
-  background-repeat: space;
-
   background-size: 100%;
 }
 
-#project-7 {
-  background-image: url("https://github.com/daveholst/tech-blog/blob/main/assets/tech-blog.gif?raw=true");
-  background-position: center;
-  background-repeat: space;
-
-  background-size: 100%;
+#project-6-info {
+  grid-column: 2/4;
+  grid-row: 6/7;
 }
 /* detect touch device (ipad settings) */
 /* @media (hover: none) {
