@@ -175,6 +175,14 @@ a {
   padding: 1vh;
   text-decoration: none;
 }
+/* trying to get internal links offset */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
 /* Page content */
 /* .content {
   margin-top: 100px;
@@ -205,11 +213,10 @@ a {
 /* projects grid for display of work */
 .projects-container-grid {
   display: grid;
-  height: 70vw;
+  /* height: 70vw; */
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
   margin: 0px -5px;
-  margin-right: ;
 }
 
 .project-card {
@@ -342,7 +349,7 @@ a {
   }
 } */
 /* mobile settings iphone and under.*/
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   h1 {
     font-size: 1.5rem;
     width: 90%;
