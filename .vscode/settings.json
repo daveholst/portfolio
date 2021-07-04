@@ -8,5 +8,22 @@
     "latex",
     "plaintext",
     "html"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#d06aeb",
+    "activityBar.activeBorder": "#ecd372",
+    "activityBar.background": "#d06aeb",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#ecd372",
+    "activityBarBadge.foreground": "#15202b",
+    "statusBar.background": "#c23de5",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#d06aeb",
+    "titleBar.activeBackground": "#c23de5",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#c23de599",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#c23de5"
 }
